@@ -1,3 +1,4 @@
+import "./style.css";
 document.addEventListener("DOMContentLoaded", () => {
   const quien = [
     "ChatGPT",
@@ -41,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "cuando el profe pidió compartir pantalla",
   ];
 
-  const pick = arr => arr[Math.floor(Math.random() * arr.length)];
+  const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
   const excusa = `${pick(quien)} ${pick(accion)} ${pick(que)} ${pick(cuando)}.`;
 
   const salida = document.querySelector("#excuse");
